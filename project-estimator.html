@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Daymark Concept project price estimator preview for freelance web work.">
+<title>Daymark Concept — Project Price Estimator</title>
+<link rel="stylesheet" href="estimator.css"><script src="estimator.js" defer></script>
+</head>
+<body>
+<header><b>daymark <small>/ tools for real life</small></b><a class="back-link" href="index.html">← Back to Daily Checklist</a><span>PLANNING TOOL</span></header>
+<main>
+<section class="intro"><p class="eyebrow">FREELANCE PLANNING TOOL</p><h1>Price the work.<br><em>Know your scope.</em></h1><p>Build a rough estimate from project type, complexity, and extras. This is a planning aid, not a quote or guarantee.</p></section>
+<section class="calculator">
+<form id="estimateForm">
+<label for="projectType">Project type</label>
+<select id="projectType"><option value="2500">Single landing page</option><option value="5000" selected>Small business website</option><option value="8500">Portfolio / multi-page site</option><option value="12000">Interactive web app prototype</option></select>
+<label for="pages">Number of pages or main screens <output id="pagesOut">5</output></label>
+<input id="pages" type="range" min="1" max="12" value="5">
+<label for="complexity">Complexity</label>
+<select id="complexity"><option value="1">Basic — mostly informational</option><option value="1.25" selected>Standard — forms and custom sections</option><option value="1.6">Advanced — multiple interactions</option></select>
+<label class="check"><input id="copy" type="checkbox"> Copy/content help (+ TT$500)</label>
+<label class="check"><input id="responsive" type="checkbox" checked> Responsive/mobile QA (+ TT$350)</label>
+<label class="check"><input id="rush" type="checkbox"> Rush delivery (+25%)</label>
+<label for="rate">Your planning rate per hour (TTD)</label>
+<input id="rate" type="number" min="50" step="25" value="250" required>
+<div class="result"><span>Estimated planning range</span><strong id="estimate">TT$5,000 – TT$6,500</strong><small id="breakdown">Demo estimate only. Confirm scope, timeline, revisions, and expenses before quoting a client.</small></div>
+<button type="submit">Copy estimate summary</button><p id="message" role="status"></p>
+</form>
+</section>
+<aside><b>Important:</b> Replace the demo assumptions with your actual experience, costs, taxes, delivery time, and local market research. Never promise a fixed price until the scope is agreed with the client.</aside>
+</main>
+<footer>DAYMARK · PROJECT ESTIMATOR · LEARNING PROTOTYPE</footer>
+</body></html>
